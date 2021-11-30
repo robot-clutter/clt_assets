@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="ur5_desk">
+  <!-- Create the link of the hemisphere -->
+  <link name="ur5_desk">
+    <visual>
+      <geometry>
+        <mesh filename="./desk/desk.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="./desk/desk.stl" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
